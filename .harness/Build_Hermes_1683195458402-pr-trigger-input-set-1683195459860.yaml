@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Hermes_1683195458402-pr-trigger-input-set
+  identifier: Build_Hermes_1683195458402prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pipeopscontroller
+  pipeline:
+    identifier: Build_Hermes_1683195458402
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
