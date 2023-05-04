@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Hermes_1683195458402-push-trigger-input-set
+  identifier: Build_Hermes_1683195458402pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: pipeopscontroller
+  pipeline:
+    identifier: Build_Hermes_1683195458402
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
