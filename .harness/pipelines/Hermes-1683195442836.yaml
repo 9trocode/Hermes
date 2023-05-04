@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_Hermes_1683195458402
+  name: Build Hermes
+  orgIdentifier: default
+  projectIdentifier: pipeopscontroller
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1682640309111
+        repoName: 9trocode/Hermes
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
